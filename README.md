@@ -5,7 +5,6 @@
 - Ques : Create a program that generates a random number and asks the user to guess it. Provide feedback on whether the guess is too high or too low until the user guesses the correct number 
 ### Explanation:
 **Random Number Generation:**
-   - The `std::srand` function seeds the random number generator with the current time, ensuring a different sequence of random numbers each time the program runs.
    - The `std::rand` function generates a random number, and the modulo operator (`%`) limits the range to 1-100.
 
 **User Input and Feedback:**
