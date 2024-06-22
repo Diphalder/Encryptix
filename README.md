@@ -45,3 +45,57 @@ This will start the number guessing game where you can try to guess the randomly
    ```
 
 This will start the calculator program where you can input two numbers and choose an operation to perform basic arithmetic operations.
+
+# Task-3 : Tic-Tac-Toe Game
+-Question: Build a simple console-based Tic-Tac-Toe game that allows two players to play against each other
+ Game Board: Create a 3x3 grid as the game board. 
+ Players: Assign "X" and "O" to two players. 
+ Display Board: Show the current state of the board. 
+ Player Input: Prompt the current player to enter their move. 
+ Update Board: Update the game board with the player's move. 
+ Check for Win: Check if the current player has won. 
+ Check for Draw: Determine if the game is a draw. 
+ Switch Players: Alternate turns between "X" and "O" players. 
+ Display Result: Show the result of the game (win, draw, or ongoing). 
+ Play Again: Ask if the players want to play another game.
+
+### Explanation:
+1. **Game Board Initialization:**
+   - The `initializeBoard` function initializes the 3x3 game board with spaces (' ').
+
+2. **Display Board:**
+   - The `displayBoard` function prints the current state of the board.
+
+3. **Player Input and Validation:**
+   - The program prompts the current player to enter their move.
+   - It validates the move to ensure it's within the bounds of the board and the chosen cell is empty.
+
+4. **Update Board:**
+   - The chosen cell is updated with the current player's symbol ('X' or 'O').
+
+5. **Check for Win:**
+   - The `checkWin` function checks if the current player has won by checking rows, columns, and diagonals.
+
+6. **Check for Draw:**
+   - The `isBoardFull` function checks if the board is full, indicating a draw.
+
+7. **Switch Players:**
+   - The `switchPlayer` function alternates turns between 'X' and 'O'.
+
+8. **Display Result:**
+   - After each move, the board is displayed and the result (win, draw, or ongoing) is shown.
+
+9. **Play Again:**
+   - After the game ends, the program asks if the players want to play another game.
+
+### How to Run:
+1. Compile the code using a C++ compiler, for example:
+   ```sh
+   g++ -o tictactoe Task_3_Tic_Tac_Toe_game.cpp
+   ```
+2. Run the executable, for example:
+   ```sh
+   ./tictactoe
+   ```
+
+This will start the Tic-Tac-Toe game where two players can play against each other.
